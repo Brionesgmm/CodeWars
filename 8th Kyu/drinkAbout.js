@@ -4,7 +4,7 @@ function peopleWithAgeDrink(old) {
     return "drink toddy";
   } else if (old <= 17) {
     return "drink coke";
-  } else if (old <= 21) {
+  } else if (old < 21) {
     return "drink beer";
   } else {
     return "drink whisky";
