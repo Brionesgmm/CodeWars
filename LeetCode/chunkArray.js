@@ -11,9 +11,7 @@ var chunk = function (arr, size) {
     let end = size;
     for (let i = 0; i < arr.length; i += size) {
       resultArr.push(arr.slice(start, end));
-      if (arr.slice(start, end).length < size) {
-        i = arr.length;
-      }
+
       start = start + size;
       end = end + size;
     }
